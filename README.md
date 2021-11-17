@@ -132,7 +132,7 @@ input (***the type must be the same as example***)
     "city": "San Jose",
     "state": "California"
 }
-
+```
 response when create successful (***the type must be the same as example***)
 
 ```
