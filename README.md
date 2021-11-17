@@ -58,13 +58,15 @@ response  when employee(s) found (***the type must be the same as example***)
     {
         "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
         "name": Steve Aden,
-        "email": "asia",
-        "address line 1": 4,
-        "create date": "2021-01-02T00:00:00.123"
+        "email": "williams@accn.com",
+        "address line 1": "Address 173 Walker St",
+        "city" : "Sydney",
+        "state" : "New South Wales",
+        "create date": "2021-04-04T00:00:00.129"
     },
    {
         "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
-        "name": Steve Aden,
+        "name": Steve S,
         "email": "asia",
         "address line 1": 4,
         "create date": "2021-01-02T00:00:00.123"
@@ -77,6 +79,43 @@ response  when employee(s) found (***the type must be the same as example***)
         "create date": "2021-01-02T00:00:00.123"
     }
  ]
- **
-### 1. Create REST API to insert new record. Address line 1,city,state is optional, but if entered, mandatory to fill all 3**
+
+note: HTTP status 200
+note2: createdAt always show 3 digits of milliseconds
+```
+response when product not found
+```
+[]
+
+note: HTTP status 200
+```
+
+### 2. Create REST API for adding new employee
+input (***the type must be the same as example***)
+```
+POST: localhost:8080/v1/product
+
+{
+    "name": "Aden George,
+    "email": "adengeorge@accn.com",
+    "address line 1": "Downtown San Jose",
+    "city": "San Jose",
+    "state": "California"
+}
+
+response when create successful (***the type must be the same as example***)
+```
+{
+    "id": "ed2ae6f0-deba-4007-8e02-f46f4a7e388f",
+    "name": "Aden George,
+    "email": "adengeorge@accn.com",
+    "address line 1": "Downtown San Jose",
+    "city": "San Jose",
+    "state": "California",
+    "createdAt": "2021-02-10T18:33:37.394"
+}
+
+note: HTTP status 200
+note2: createdAt always show 3 digits of milliseconds
+```
 
