@@ -9,13 +9,14 @@
 - (Windows) Docker https://docs.docker.com/desktop/windows/install/
 - Postman https://www.postman.com/downloads/ 
 
+### Code Commit
+Create your own new branch from the **main** branch and push your commits to the same local branch.
+
 ### Starting
 Create Database using docker-compose that we provided
 
 ### Database
-- Database: MSSQL
-- Account: SA
-- Password: yourStrong(!)Password
+- Database: Can use Derby database
 
 ### Table
 - table name: employee
@@ -133,6 +134,7 @@ input (***the type must be the same as example***)
 }
 
 response when create successful (***the type must be the same as example***)
+
 ```
 {
     "id": "ed2ae6f0-deba-4007-8e02-f46f4a7e388f",
