@@ -40,8 +40,9 @@ Create Database using docker-compose that we provided
               - varchar(20)
                       - example1: California
         - createDate
-              - varchar(30)
-                    - example1 : 2021-01-02T00:00:00.123
+              - generated value
+	      - timestamp
+                    - example1 : 2021-02-11T15:45:01.123
                     
 ### Mocked Data in table
 ![image](https://user-images.githubusercontent.com/94523251/142173710-ee7f8618-936f-4e89-add8-d5b90cf6adf4.png)
@@ -49,52 +50,80 @@ Create Database using docker-compose that we provided
 ## Tasks
 
 ### 1. Create REST API for showing employees based on global search
-input
+### input 1
 ```
-Input 1: name i.e. "Steve" 
+Input 1: name i.e. "Sam" 
 response  when employee(s) found (***the type must be the same as example***)
 
 [
     {
-        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
-        "name": Steve Aden,
-        "email": "williams@accn.com",
-        "address line 1": "Address 173 Walker St",
-        "city" : "Sydney",
+        "id": "cc5a8d9f-21dd-4ce0-9e7f-18090b3d3268",
+        "name": "Sams Dan",
+        "email": "samsdan@accn.com",
+        "address line 1": "St John's Anglican Church",
+        "city" : "Canberra",
         "state" : "New South Wales",
-        "create date": "2021-04-04T00:00:00.129"
+        "create date": "2021-01-03T00:00:00.131"
     },
    {
-        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
-        "name": Steve S,
-        "email": "asia",
-        "address line 1": 4,
-        "create date": "2021-01-02T00:00:00.123"
+        "id": "56619ca9-227b-430a-9759-d33aee0f7f2a",
+         "name": "Samuel Mach",
+        "email": "samuelmach@accn.com",
+        "address line 1": "180 E Weber Ave Stockton",
+        "city" : "Stockton",
+        "state" : "California",
+        "create date": "2021-01-02T00:00:00.127"
     },
     {
-        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
-        "name": Steve Aden,
-        "email": "asia",
-        "address line 1": 4,
-        "create date": "2021-01-02T00:00:00.123"
+        "id": "b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2",
+        "name": "Willian Sam",
+        "email": "williansam@accn.com",
+        "address line 1": "24 Moorabool St",
+        "city" : "Geelong",
+        "state" : "Victoria",
+        "create date": "2021-09-02T00:00:00.132"
     }
  ]
 
 note: HTTP status 200
-note2: createdAt always show 3 digits of milliseconds
+note2: create date always show 3 digits of milliseconds
 ```
-response when product not found
+response when employee not found
 ```
 []
 
 note: HTTP status 200
 ```
+### input 2
+```
+Input 2: email i.e. "samsdan@accn.com" 
+response  when employee(s) found (***the type must be the same as example***)
 
-### 2. Create REST API for adding new employee
+[
+    {
+        "id": "cc5a8d9f-21dd-4ce0-9e7f-18090b3d3268",
+        "name": "Sams Dan",
+        "email": "samsdan@accn.com",
+        "address line 1": "St John's Anglican Church",
+        "city" : "Canberra",
+        "state" : "New South Wales",
+        "create date": "2021-01-03T00:00:00.131"
+    }
+ ]
+ 
+note: HTTP status 200
+note2: create date always show 3 digits of milliseconds
+```
+response when employee not found
+```
+[]
+
+note: HTTP status 200
+```
+ 
+### 2. Create REST API to insert new record. Address line 1,city,state is optional, but if entered, mandatory to fill all 3 of them
 input (***the type must be the same as example***)
 ```
-POST: localhost:8080/v1/product
-
 {
     "name": "Aden George,
     "email": "adengeorge@accn.com",
