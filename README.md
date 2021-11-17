@@ -46,3 +46,37 @@ Create Database using docker-compose that we provided
 ### Mocked Data in table
 ![image](https://user-images.githubusercontent.com/94523251/142173710-ee7f8618-936f-4e89-add8-d5b90cf6adf4.png)
 
+## Tasks
+
+### 1. Create REST API for showing employees based on global search
+input
+```
+Input 1: name i.e. "Steve" 
+response  when employee(s) found (***the type must be the same as example***)
+
+[
+    {
+        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
+        "name": Steve Aden,
+        "email": "asia",
+        "address line 1": 4,
+        "create date": "2021-01-02T00:00:00.123"
+    },
+   {
+        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
+        "name": Steve Aden,
+        "email": "asia",
+        "address line 1": 4,
+        "create date": "2021-01-02T00:00:00.123"
+    },
+    {
+        "id": "96e5f9cb-61ce-43cc-804c-e3e1f8479982",
+        "name": Steve Aden,
+        "email": "asia",
+        "address line 1": 4,
+        "create date": "2021-01-02T00:00:00.123"
+    }
+ ]
+ **
+### 1. Create REST API to insert new record. Address line 1,city,state is optional, but if entered, mandatory to fill all 3**
+
