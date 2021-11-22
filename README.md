@@ -3,6 +3,7 @@
 ### Pre-requisites
 - IntelliJ or any code editor https://www.jetbrains.com/idea/download/ 
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+- Derby databse https://archive.apache.org/dist/db/derby/db-derby-10.15.1.3/db-derby-10.15.1.3-bin.zip
 - Gradle https://gradle.org/install/ 
 - Lombok https://projectlombok.org/download
 - (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
@@ -12,11 +13,11 @@
 ### Code Commit
 Create your own new branch from the **main** branch and push your commits to the same local branch.
 
-### Starting
-Create Database using docker-compose that we provided
-
 ### Database
-- Database: Can use Derby database
+- Database: 
+	Can use Derby database and follow the below steps,
+		- update the table creation script in the Employee_Create.sql
+		- update the seed script in the Employee_Seed.sql
 
 ### Table
 - table name: employee
