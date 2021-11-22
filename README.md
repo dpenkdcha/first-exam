@@ -1,9 +1,9 @@
-# Any IDE with Dereby database
 # Create REST API with JAVA Spring Boot Practice
 ## Information
 ### Pre-requisites
 - IntelliJ or any code editor https://www.jetbrains.com/idea/download/ 
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+- Dereby databse https://archive.apache.org/dist/db/derby/db-derby-10.15.1.3/db-derby-10.15.1.3-bin.zip
 - Gradle https://gradle.org/install/ 
 - Lombok https://projectlombok.org/download
 - (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
