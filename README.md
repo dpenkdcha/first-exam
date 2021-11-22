@@ -12,11 +12,11 @@
 ### Code Commit
 Create your own new branch from the **main** branch and push your commits to the same local branch.
 
-### Starting
-Create Database using docker-compose that we provided
-
 ### Database
-- Database: Can use Derby database
+- Database: 
+	Can use Derby database and follow the below steps,
+		- update the table creation script in the Employee_Create.sql
+		- update the seed script in the Employee_Seed.sql
 
 ### Table
 - table name: employee
