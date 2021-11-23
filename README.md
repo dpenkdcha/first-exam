@@ -3,12 +3,21 @@
 ### Pre-requisites
 - IntelliJ or any code editor https://www.jetbrains.com/idea/download/ 
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
-- Derby databse https://archive.apache.org/dist/db/derby/db-derby-10.15.1.3/db-derby-10.15.1.3-bin.zip
+- Derby databse: https://archive.apache.org/dist/db/derby/db-derby-10.13.1.1/db-derby-10.13.1.1-bin.zip
 - Gradle https://gradle.org/install/ 
 - Lombok https://projectlombok.org/download
 - (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
 - (Windows) Docker https://docs.docker.com/desktop/windows/install/
 - Postman https://www.postman.com/downloads/ 
+
+### Derby Installation
+- Download the zip and extract the files.
+- Set the **DERBY_HOME** as key and value will be the path which u extracted in the system varaible then edit the **path** variable and add the **%DERBY_HOME%\bin** bin location of derby to it.
+- open cmd promt and type **ij** 
+- execute the below cmd to create a database and its ready to use now
+ 	**ij> connect 'jdbc:derby:exonmobile;create=true;territory=en_US;collation=TERRITORY_BASED;user=exon;password=exon';**
+	
+**Note: You must have installed jdk8 +**
 
 ### Code Commit  #test
 Create your own new branch from the **main** branch and push your commits to the same local branch.
