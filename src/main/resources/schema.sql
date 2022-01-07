@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS employee
+create table employee (id uuid default random_uuid() not null, address varchar(255), city varchar(255), email varchar(255), create_date timestamp, name varchar(255), state varchar(255), primary key (id))
