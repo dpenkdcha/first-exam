@@ -1,5 +1,6 @@
 package com.scott.betaexam.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.scott.betaexam.annotations.AddressFieldValidation;
 import lombok.*;
 
@@ -23,12 +24,14 @@ public class UsersDto {
     @NotEmpty(message = "Email can not be empty")
     private String email;
 
+    @JsonProperty("address line 1")
     private String address;
 
     private String city;
 
     private String state;
 
+    @JsonProperty("create date")
     private LocalDateTime createDate;
 
 }

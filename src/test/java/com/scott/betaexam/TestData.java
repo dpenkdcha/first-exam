@@ -16,12 +16,12 @@ public class TestData {
     public static final String FILTER_BY_NO_MATCHING_NAME = "sams";
     public static final String FILTER_BY_EMAIL = "samsdan@accn.com";
     public static final String ADD_USER_ENDPOINT = "/users";
-    public static final String EXPECTED_TEST_GET_USER_DETAILS = "[{\"id\":\"14773ddd-1e47-4183-a03c-ad9323304fb2\",\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\",\"createDate\":\"2022-01-06T01:10:17.968\"}]";
-    public static final String VALID_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\"}";
-    public static final String INVALID_ADD_USER_DETAILS = "{\"name\":\"\",\"email\":\"samsdan@accn.com\",\"address\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\"}";
-    public static final String INVALID_ADDRESS_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address\":\"\",\"city\":\"DC\",\"state\":\"NYK\"}";
-    public static final String INVALID_CITY_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address\":\"Anglican House\",\"city\":\"\",\"state\":\"NYK\"}";
-    public static final String INVALID_STATE_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address\":\"Anglican House\",\"city\":\"DC\",\"state\":\"\"}";
+    public static final String EXPECTED_TEST_GET_USER_DETAILS = "[{\"id\":\"14773ddd-1e47-4183-a03c-ad9323304fb2\",\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\",\"create date\":\"2022-01-06T01:10:17.968\"}]";
+    public static final String VALID_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\"}";
+    public static final String INVALID_ADD_USER_DETAILS = "{\"name\":\"\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"Anglican House\",\"city\":\"DC\",\"state\":\"NYK\"}";
+    public static final String INVALID_ADDRESS_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"\",\"city\":\"DC\",\"state\":\"NYK\"}";
+    public static final String INVALID_CITY_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"Anglican House\",\"city\":\"\",\"state\":\"NYK\"}";
+    public static final String INVALID_STATE_ADD_USER_DETAILS = "{\"name\":\"Sams Dan\",\"email\":\"samsdan@accn.com\",\"address line 1\":\"Anglican House\",\"city\":\"DC\",\"state\":\"\"}";
     public static final String MISSING_FIELD_TEST = "[\"Name can note be empty\"]";
     public static final String MISSING_ADDRESS_FIELD_TEST = "[\"Invalid Details: Address, City, State must be present\"]";
 
