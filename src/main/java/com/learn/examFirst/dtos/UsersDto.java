@@ -1,5 +1,6 @@
 package com.scott.betaexam.dtos;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.scott.betaexam.annotations.AddressFieldValidation;
 import lombok.*;
@@ -10,8 +11,6 @@ import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 @Data
 @AddressFieldValidation()
 public class UsersDto {
@@ -32,6 +31,10 @@ public class UsersDto {
     private String state;
 
     @JsonProperty("create date")
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss.SSS")
     private LocalDateTime createDate;
 
 }
+
+
+

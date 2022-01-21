@@ -2,8 +2,11 @@ package com.scott.betaexam.unit;
 
 import com.scott.betaexam.domain.Users;
 import com.scott.betaexam.dtos.UsersDto;
+import com.scott.betaexam.repositories.ConsumptionMasterRepository;
+import com.scott.betaexam.repositories.EmployeeConsumptionRepository;
 import com.scott.betaexam.repositories.UserRepository;
 import com.scott.betaexam.services.serviceImpl.UserServiceImpl;
+import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,6 +24,7 @@ import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.openMocks;
 
 @ExtendWith(MockitoExtension.class)
+@RequiredArgsConstructor
 public class UserServiceTests {
 
     UserServiceImpl userService;
@@ -31,10 +35,16 @@ public class UserServiceTests {
     @Mock
     ModelMapper modelMapper;
 
+    @Mock
+    EmployeeConsumptionRepository employeeConsumptionRepository;
+
+    @Mock
+    ConsumptionMasterRepository consumptionMasterRepository;
+
     @BeforeEach
     public void setup(){
         openMocks(this);
-        userService = new UserServiceImpl(userRepository, modelMapper);
+        userService = new UserServiceImpl(userRepository, employeeConsumptionRepository, consumptionMasterRepository, modelMapper);
     }
 
     @Test

@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "EMPLOYEE")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -22,14 +21,8 @@ import java.util.UUID;
 public class Users {
 
     @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(
-            name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator"
-    )
-    @Column(name = "ID", updatable = false, nullable = false)
-    @ColumnDefault("random_uuid()")
-    @Type(type = "uuid-char")
+    @GeneratedValue
+    @Column(columnDefinition = "BINARY(16)", name = "id", updatable = false, nullable = false)
     private UUID id;
 
     @Column(name = "Name")
