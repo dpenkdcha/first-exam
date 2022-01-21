@@ -1,11 +1,11 @@
-package com.scott.betaexam.unit;
+package com.learn.examFirst.unit;
 
-import com.scott.betaexam.domain.Users;
-import com.scott.betaexam.dtos.UsersDto;
-import com.scott.betaexam.repositories.ConsumptionMasterRepository;
-import com.scott.betaexam.repositories.EmployeeConsumptionRepository;
-import com.scott.betaexam.repositories.UserRepository;
-import com.scott.betaexam.services.serviceImpl.UserServiceImpl;
+import com.learn.examFirst.dtos.UsersDto;
+import com.learn.examFirst.domain.Users;
+import com.learn.examFirst.repositories.ConsumptionMasterRepository;
+import com.learn.examFirst.repositories.EmployeeConsumptionRepository;
+import com.learn.examFirst.repositories.UserRepository;
+import com.learn.examFirst.services.serviceImpl.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static com.scott.betaexam.TestData.*;
+import static com.learn.examFirst.TestData.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.openMocks;

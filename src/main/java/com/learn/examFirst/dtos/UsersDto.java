@@ -1,8 +1,8 @@
-package com.scott.betaexam.dtos;
+package com.learn.examFirst.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.scott.betaexam.annotations.AddressFieldValidation;
+import com.learn.examFirst.annotations.AddressFieldValidation;
 import lombok.*;
 
 import javax.validation.constraints.NotEmpty;

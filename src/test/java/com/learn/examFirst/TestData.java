@@ -1,7 +1,7 @@
-package com.scott.betaexam;
+package com.learn.examFirst;
 
-import com.scott.betaexam.domain.Users;
-import com.scott.betaexam.dtos.UsersDto;
+import com.learn.examFirst.domain.Users;
+import com.learn.examFirst.dtos.UsersDto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

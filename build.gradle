@@ -31,6 +31,8 @@ dependencies {
 	runtimeOnly 'org.apache.derby:derby'
 	compileOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	runtimeOnly 'mysql:mysql-connector-java:8.0.27'
+
 }
 
 test {

@@ -1,6 +1,6 @@
-package com.scott.betaexam;
+package com.learn.examFirst;
 
-import com.scott.betaexam.controllers.UserController;
+import com.learn.examFirst.controllers.UserController;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,7 +13,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 class BetaExamApplicationTests {
 
 	@Autowired
-	UserController userController;
+    UserController userController;
 
 	@Test
 	void contextLoads() {

@@ -1,6 +1,6 @@
-package com.scott.betaexam.repositories;
+package com.learn.examFirst.repositories;
 
-import com.scott.betaexam.domain.ConsumptionMaster;
+import com.learn.examFirst.domain.ConsumptionMaster;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

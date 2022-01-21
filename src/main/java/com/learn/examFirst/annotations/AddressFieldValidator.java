@@ -1,6 +1,6 @@
-package com.scott.betaexam.annotations;
+package com.learn.examFirst.annotations;
 
-import com.scott.betaexam.dtos.UsersDto;
+import com.learn.examFirst.dtos.UsersDto;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

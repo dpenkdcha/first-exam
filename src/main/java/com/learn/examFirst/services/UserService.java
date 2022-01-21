@@ -1,9 +1,9 @@
-package com.scott.betaexam.services;
+package com.learn.examFirst.services;
 
-import com.scott.betaexam.dtos.EmpUsageDto;
-import com.scott.betaexam.dtos.EmployeeUsageDto;
-import com.scott.betaexam.dtos.InputDto;
-import com.scott.betaexam.dtos.UsersDto;
+import com.learn.examFirst.dtos.EmpUsageDto;
+import com.learn.examFirst.dtos.EmployeeUsageDto;
+import com.learn.examFirst.dtos.InputDto;
+import com.learn.examFirst.dtos.UsersDto;
 
 import java.util.List;
 import java.util.Optional;

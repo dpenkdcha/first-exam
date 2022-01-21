@@ -1,4 +1,4 @@
-package com.scott.betaexam.handlers;
+package com.learn.examFirst.handlers;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

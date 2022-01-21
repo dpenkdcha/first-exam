@@ -1,4 +1,4 @@
-package com.scott.betaexam.annotations;
+package com.learn.examFirst.annotations;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

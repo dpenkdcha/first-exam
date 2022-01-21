@@ -1,8 +1,8 @@
-package com.scott.betaexam.unit;
+package com.learn.examFirst.unit;
 
-import com.scott.betaexam.controllers.UserController;
-import com.scott.betaexam.dtos.UsersDto;
-import com.scott.betaexam.services.UserService;
+import com.learn.examFirst.dtos.UsersDto;
+import com.learn.examFirst.controllers.UserController;
+import com.learn.examFirst.services.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.List;
 import java.util.Optional;
 
-import static com.scott.betaexam.TestData.*;
+import static com.learn.examFirst.TestData.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;

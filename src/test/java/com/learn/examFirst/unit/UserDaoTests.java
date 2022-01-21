@@ -1,7 +1,7 @@
-package com.scott.betaexam.unit;
+package com.learn.examFirst.unit;
 
-import com.scott.betaexam.domain.Users;
-import com.scott.betaexam.repositories.UserRepository;
+import com.learn.examFirst.domain.Users;
+import com.learn.examFirst.repositories.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
-import static com.scott.betaexam.TestData.*;
+import static com.learn.examFirst.TestData.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(SpringExtension.class)

@@ -1,4 +1,4 @@
-package com.scott.betaexam.config;
+package com.learn.examFirst.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

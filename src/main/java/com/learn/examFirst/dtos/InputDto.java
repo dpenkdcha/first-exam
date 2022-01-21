@@ -1,4 +1,4 @@
-package com.scott.betaexam.dtos;
+package com.learn.examFirst.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

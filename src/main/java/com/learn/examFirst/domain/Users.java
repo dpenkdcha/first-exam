@@ -1,4 +1,4 @@
-package com.scott.betaexam.domain;
+package com.learn.examFirst.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

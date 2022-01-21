@@ -1,7 +1,5 @@
-package com.scott.betaexam.dtos;
+package com.learn.examFirst.dtos;
 
-import com.scott.betaexam.domain.ConsumptionMaster;
-import com.scott.betaexam.domain.EmployeeConsumption;
 import lombok.*;
 
 @AllArgsConstructor

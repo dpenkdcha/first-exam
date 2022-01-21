@@ -1,21 +1,17 @@
-package com.scott.betaexam.controllers;
+package com.learn.examFirst.controllers;
 
-import com.scott.betaexam.dtos.EmpUsageDto;
-import com.scott.betaexam.dtos.InputDto;
-import com.scott.betaexam.dtos.SimpleResponse;
-import com.scott.betaexam.dtos.UsersDto;
-import com.scott.betaexam.services.UserService;
+import com.learn.examFirst.dtos.UsersDto;
+import com.learn.examFirst.dtos.EmpUsageDto;
+import com.learn.examFirst.dtos.InputDto;
+import com.learn.examFirst.dtos.SimpleResponse;
+import com.learn.examFirst.services.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.text.ParseException;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.scott.betaexam;
+package com.learn.examFirst;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
